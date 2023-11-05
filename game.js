@@ -13,7 +13,7 @@
   var velocity = { x:0, y:0 };
   var player = { x: INITIAL_PLAYER.x, y: INITIAL_PLAYER.y };
 
-  var walls = false;
+  var walls = true;
   
   var snakeHeadColor = '#FF5733'; 
   
