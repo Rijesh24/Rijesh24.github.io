@@ -1,0 +1,52 @@
+*{
+  text-decoration: none;
+}
+html{
+  height: 100%;
+}
+body{
+  background:url(background.jpg) no-repeat;
+  background-size: cover;
+  background-origin: center;
+  opacity: 90%;
+}
+section.flexer{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+  column-gap: 10%;
+  height: 40%;
+}
+section.flexer div{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  border:5px solid grey;
+}
+section.flexer div img{
+  border-bottom: 5px solid grey;
+}
+section.flexer div a{
+  padding: 20px 0px;
+  background: black;
+  color: whitesmoke;
+}
+h1{
+  text-align: center;
+  margin: 40px;
+  color: whitesmoke;
+}
+@media(max-width:500px){
+  section.flexer div img{
+  height: 20rem;
+  width: 100%;
+  }
+  h1{
+    font-size: 25px;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+canvas {
+    border: 8px solid grey;
+    background-color:#252222;
+    width: 97%;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 55px;
+  background: grey;
+  color: white;
+  font-size: 50px;
+  border-right: 10px solid #ccc;
+  border-bottom: 10px solid #ccc;
+  border-left: 10px solid #ddd;
+  border-top: 10px solid #eee;
+  display: inline-block;
+  margin: 5px;
+  transition: all .05s linear;
+  user-select: none;
+  border-radius: 7px;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+    .game-container {
+        align-items: center;
+    }
+    
+    canvas {
+        border: 7px solid grey;
+    }
+    
+    button {
+        font-size: 16px;
+    }
+}
+/*for others than the laptop*/  
+@media(min-width: 700px){
+  button{
+    width: 170px;
+    height: 170px;
+    border-right: 20px solid #ccc;
+    border-bottom: 20px solid #ccc;
+    border-left: 20px solid #ddd;
+    border-top: 20px solid #eee;
+  }
+}
